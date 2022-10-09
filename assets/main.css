@@ -477,6 +477,7 @@ template {
     padding-bottom: 10px;
     margin-right: 10px;
     margin-bottom: 30px;
+    font-size: 30px;
 }
 
 .main_left_ul {
@@ -523,6 +524,10 @@ template {
     border: 1px solid rgb(180, 176, 176);
     padding: 0 10px;
     margin-bottom: 20px;
+}
+
+.body_content_main_right1 ul li {
+    font-size: 14px;
 }
 
 .body_content_main_right h1 {
