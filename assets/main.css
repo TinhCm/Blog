@@ -583,6 +583,38 @@ template {
     color: #0064d2;
 }
 
+/* Phân trang */
+.container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.pagination {
+    width: 400px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.pagination a {
+    display: block;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
 /* Footer */
 
 .footer {
@@ -694,6 +726,7 @@ template {
 .footer2_center h1 {
     text-align: center;
     font-size: 25px;
+    font-family: cursive;
 }
 
 .footer2_center p span {
