@@ -461,6 +461,7 @@ template {
 .body_content_main {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 50px;
 }
 
 .body_content_main_left {
@@ -580,4 +581,422 @@ template {
     margin-top: 5px;
     display: block;
     color: #0064d2;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #0c121c;
+}
+
+.footer1 {
+    height: 150px;
+    background-color: #0064d2;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 40px 40px;
+    position: relative;
+    top: -30px;
+    box-shadow: 0 1px 3px -2px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+}
+
+.footer1_left {
+    flex: 1;
+}
+
+.footer1_left h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.footer1_left p {
+    color: white;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.footer1_right {
+    flex: 1;
+    align-items: center;
+}
+
+.footer1_right1 {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    align-items: center;
+}
+
+.footer1_right2 {
+    display: block;
+    margin: 0px;
+    color: blue;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer1_right1 input {
+    outline: none;
+    height: 38px;
+    max-width: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    flex: 1;
+}
+
+.footer1_right1 button {
+    height: 38px;
+    width: 177px;
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #6a9ccf;
+    margin-left: 10px;
+    color: white;
+    font-weight: 550;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer1_right_button:hover {
+    opacity: 0.7;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer2_left {
+    flex: 1;
+    background-image: url(https://dulichtoday.vn/wp-content/uploads/2017/04/vinh-Ha-Long.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.footer2_center {
+    flex: 2;
+    padding: 0 40px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.footer2_center h1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer2_center p span {
+    color: yellow !important;
+}
+
+.footer2_center p {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.footer2_right {
+    flex: 1;
+    background-image: url(https://media.vov.vn/sites/default/files/styles/large/public/2020-09/99-thuyen_hoa.jpg);
+    background-size: 100%;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+}
+
+.footer2_lienLe {
+    display: flex;
+    align-items: center;
+}
+
+.footer2_lienLe ul {
+    margin: 0;
+}
+
+.footer2_lienLe ul {
+    padding: 0;
+    padding-left: 50px;
+    display: flex;
+}
+
+.footer2_lienLe ul li {
+    list-style: none;
+}
+
+.footer2_lienLe ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 15px;
+    color: white;
+    line-height: 37px;
+}
+
+
+.footer3 {
+    background-color: #0d192e;
+    padding: 5px 0;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+}
+
+.footer3 p {
+    font-size: 12px;
+    margin: 0;
+    line-height: 20px;
+}
+
+.footer3 span {
+    font-weight: 550;
+    font-size: 12px;
+}
+
+.footer3_left {
+    flex: 1;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+.footer3_left a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer3_center {
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+}
+
+.footer3_right {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+    font-size: 16px;
+    margin: auto;
+}
+
+.footer3_right p {
+    cursor: text;
+}
+
+.footer3_right a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.footer3_right i {
+    padding-right: 10px;
+}
+
+/* Phone */
+
+.hotline-phone-ring-wrap {
+    position: fixed;
+    bottom: 70px;
+    right: 0;
+    z-index: 999999;
+}
+
+.hotline-phone-ring {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    left: 0;
+    bottom: 0;
+    display: block;
+}
+
+.hotline-phone-ring-circle {
+    width: 85px;
+    height: 85px;
+    top: 10px;
+    left: 10px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 100%;
+    border: 2px solid #e60808;
+    -webkit-animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    opacity: 0.5;
+}
+
+.hotline-phone-ring-circle-fill {
+    width: 55px;
+    height: 55px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background-color: rgba(230, 8, 8, 0.7);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    transition: all .5s;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+
+.hotline-phone-ring-img-circle {
+    background-color: #e60808;
+    width: 33px;
+    height: 33px;
+    top: 37px;
+    left: 37px;
+    position: absolute;
+    background-size: 20px;
+    border-radius: 100%;
+    border: 2px solid transparent;
+    -webkit-animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hotline-phone-ring-img-circle .pps-btn-img {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.hotline-phone-ring-img-circle .pps-btn-img img {
+    width: 20px;
+    height: 20px;
+}
+
+.hotline-bar {
+    position: absolute;
+    background: rgba(230, 8, 8, 0.75);
+    height: 40px;
+    width: 180px;
+    line-height: 40px;
+    border-radius: 3px;
+    padding: 0 10px;
+    background-size: 100%;
+    cursor: pointer;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    z-index: 9;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px !important;
+    /* width: 175px !important; */
+    left: 33px;
+    bottom: 37px;
+}
+
+.hotline-bar>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    text-indent: 50px;
+    display: block;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: Arial;
+}
+
+.hotline-bar>a:hover,
+.hotline-bar>a:active {
+    color: #fff;
+}
+
+@-webkit-keyframes phonering-alo-circle-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+
+    30% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        -webkit-opacity: 0.5;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        -webkit-opacity: 0.1;
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-fill-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+        opacity: 0.6;
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+        opacity: 0.6;
+    }
+}
+
+@-webkit-keyframes phonering-alo-circle-img-anim {
+    0% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    10% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    20% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    30% {
+        -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+
+    40% {
+        -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+
+    50% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+}
+
+.hotline-bar {
+    display: none;
 }
