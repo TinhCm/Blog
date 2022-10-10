@@ -295,6 +295,11 @@ template {
 .header1_left ul li {
     padding-right: 20px;
     color: var(--text-color);
+    transition: background-color .3s;
+}
+
+.header1_left ul li:hover {
+    color: blue;
 }
 
 .header1_left ul li i {
@@ -944,7 +949,6 @@ template {
     z-index: 9;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px !important;
-    /* width: 175px !important; */
     left: 33px;
     bottom: 37px;
 }
