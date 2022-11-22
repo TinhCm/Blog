@@ -274,6 +274,12 @@ template {
     display: flex;
     font-size: 13px;
     background-color: #f0f2f5;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    border-bottom: 2px solid red;
+    height: 43px;
 }
 
 .header1 a {
@@ -327,6 +333,51 @@ template {
     color: blue;
 }
 
+/* Tìm kiếm */
+.btn_search:hover .search {
+    display: flex !important;
+}
+
+.search {
+    position: absolute;
+    /* top: 43px; */
+    display: none !important;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    background-color: white;
+    padding: 0 10px;
+}
+
+.search input {
+    height: 30px;
+    width: 100%;
+    margin: 10px 0px;
+    box-sizing: border-box;
+    outline: none;
+    border: 0.5px solid rgb(180, 176, 176);
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.search button {
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.search i {
+    height: 30px;
+    line-height: 30px;
+    padding-right: 0px !important;
+    box-sizing: border-box;
+    align-items: center;
+    color: blue !important;
+    align-items: center;
+}
+
 /* Header2 */
 .header2 {
     background-color: #0064d2;
@@ -373,6 +424,7 @@ template {
 .welcome {
     background-color: #f0f2f5;
     margin-bottom: -50px;
+    padding-top: 43px;
 }
 
 .welcome1 img {
