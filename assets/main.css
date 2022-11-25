@@ -270,6 +270,18 @@ template {
 
 /* Header1 */
 
+.header_wrap {
+    text-align: center;
+    font-size: 45px;
+    margin: 0;
+    padding-bottom: 50px;
+    background-color: #f0f2f5;
+}
+
+.header_wrap:hover {
+    color: blue;
+}
+
 .header1 {
     display: flex;
     font-size: 13px;
@@ -314,6 +326,7 @@ template {
     font-size: 16px;
 }
 
+
 .header1_right ul {
     display: flex;
     list-style: none;
@@ -327,6 +340,11 @@ template {
 
 .header1_right ul li a i {
     font-size: 16px;
+    color: blue;
+}
+
+.header1_right ul li a:hover {
+    color: blue;
 }
 
 .header1_right ul li:last-child {
@@ -340,13 +358,13 @@ template {
 
 .search {
     position: absolute;
-    /* top: 43px; */
     display: none !important;
     height: 50px;
     width: 300px;
     display: flex;
     background-color: white;
     padding: 0 10px;
+    transition: width 2s, height 4s;
 }
 
 .search input {
@@ -376,6 +394,17 @@ template {
     align-items: center;
     color: blue !important;
     align-items: center;
+}
+
+.content_left_box {
+    display: inline-block;
+    margin-bottom: -5px;
+    height: 40px;
+    width: 10px;
+    background-color: orangered;
+    text-align: center;
+    align-items: center;
+    /* margin-right: 5px; */
 }
 
 /* Header2 */
@@ -447,7 +476,7 @@ template {
 .welcome2_content img:hover {
     border-color: #0064d2;
     position: relative;
-    top: -10px;
+    /* top: -10px; */
 }
 
 /* Body */
@@ -458,6 +487,10 @@ template {
 
 .body_content_outstanding {
     margin-bottom: 50px;
+}
+
+.body_content_outstanding:hover {
+    color: blue;
 }
 
 .body_content_outstanding h1 {
@@ -576,6 +609,10 @@ template {
     padding-left: 20px;
     font-size: 14px;
     color: blue;
+}
+
+.main_left_li_content_right p {
+    text-align: justify;
 }
 
 .body_content_main_right1 {
@@ -1088,4 +1125,170 @@ template {
 
 .hotline-bar {
     display: none;
+}
+
+/* Chào mừng */
+
+.chaoMung_backgroud {
+    height: 500px;
+    padding-bottom: 50px;
+    background-color: #f0f2f5;
+}
+
+#main {
+    position: relative;
+    margin: 0 auto;
+    background: #dddede;
+    overflow: hidden;
+}
+
+#main:hover #prev-slide,
+#next-slide {
+    display: block;
+}
+
+#main:hover #next-slide {
+    display: block;
+}
+
+.wrap-slider {
+    display: flex;
+}
+
+#prev-slide,
+#next-slide {
+    position: absolute;
+    top: 217px;
+    cursor: pointer;
+    line-height: 40px;
+    display: none
+}
+
+#prev-slide {
+    left: 10px;
+}
+
+#prev-slide i {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: content-box;
+}
+
+#prev-slide i:hover {
+    color: white;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #02b24e;
+    border: 2px solid #02b24e;
+    box-sizing: content-box;
+}
+
+#next-slide {
+    right: 10px;
+}
+
+#next-slide i {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-sizing: content-box;
+}
+
+#next-slide i:hover {
+    color: white;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background-color: #02b24e;
+    border: 2px solid #02b24e;
+    box-sizing: content-box;
+}
+
+#wrap-slider {
+    position: relative;
+    overflow: hidden;
+}
+
+#slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide-box {
+    height: 500px;
+    display: block;
+    float: left;
+    object-fit: cover;
+    text-align: center;
+}
+
+
+/* Chuyển cảnh */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.third,
+.third:visited,
+.third:hover {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+}
+
+.third:hover {
+    color: orangered;
+}
+
+.third.before:before,
+.third.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.third.before:before {
+    top: -0.25em;
+}
+
+.third.after:after {
+    bottom: -0.25em;
+}
+
+.third.before:before,
+.third.after:after {
+    height: 5px;
+    height: 0.35rem;
+    width: 0;
+    background: blue;
+}
+
+.third:after {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.third.before:hover:before,
+.third.after:hover:after {
+    width: 100%;
 }

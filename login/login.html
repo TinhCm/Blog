@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="icon" href="/assets/img/icon.png" type="image/x-icon">
+    <link type="text/css" href="/assets/main.css" rel="stylesheet">
+    <link type="text/css" href="/login/login.css" rel="stylesheet">
+    <title>Sign in</title>
+</head>
+
+<body>
+
+    <form method="post" autocomplete="off" action="#">
+        <div class="cont">
+            <div class="form sign-in">
+                <h2>Chào mừng trở lại,</h2>
+                <label>
+                    <span>Tên đăng nhập</span>
+                    <input type="text" name="username1">
+                </label>
+                <label>
+                    <span>Mật khẩu</span>
+                    <input type="password" name="password1">
+                </label>
+                <button type="submit" class="submit" name="signin" value="Sign In">Đăng nhập</button>
+            </div>
+
+            <div class="sub-cont">
+                <div class="img">
+                    <div class="img__text m--up">
+                        <h2>New here?</h2>
+                        <p>Sign up and discover great amount of new opportunities!</p>
+                    </div>
+                    <div class="img__text m--in">
+                        <h2>One of us?</h2>
+                        <p>If you already have an account, just sign in. We've missed you!</p>
+                    </div>
+                    <div class="img__btn">
+                        <span class="m--up">Đăng ký</span>
+                        <span class="m--in">Đăng nhập</span>
+                    </div>
+                </div>
+                <form method="post" autocomplete="off" action="#">
+                    <div class="form sign-up">
+                        <h2>Time to feel like home,</h2>
+                        <label>
+                            <span>Tên đăng nhập</span>
+                            <input type="text" name="username2">
+                        </label>
+                        <label>
+                            <span>Mật khẩu</span>
+                            <input type="password" name="password2">
+                        </label>
+                        <label>
+                            <span>Email</span>
+                            <input type="email" name="email2">
+                        </label>
+                        <label>
+                            <span>Giới tính</span><br>
+                            <input type="radio" class="male" name="sex" value="nam">
+                            <label class="male" id="male1" for="male">NAM</label>
+                            <input type="radio" class="female" name="sex" value="nữ">
+                            <label class="female" id="female1" for="female">NỮ</label>
+                            <input type="radio" class="other" name="sex" value="khác">
+                            <label class="other" id="other1" for="other">KHÁC</label>
+                        </label>
+                        <button type="submit" class="submit" name="signup" value="Sign Up">Đăng ký</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </form>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+<script src="/login/login.js"></script>
+
+</html>
