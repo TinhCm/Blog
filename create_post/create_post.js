@@ -19,8 +19,17 @@ fileUpload.addEventListener("change", (event) => {
 	
 	// Lắng nghe quá trình đọc tập tin hoàn thành
 	reader.addEventListener("load", (event) => {
-		const url = event.target.results
-			
-			document.querySelector("img").src = URL.createObjectURL(url);
+		// Lấy chuỗi Binary thông tin hình ảnh
+		const img = event.target.result;
+		
+		// Thực hiện hành động gì đó, có thể append chuỗi giá trị này vào thẻ IMG
+		console.log(img) // data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEASABIAA........
 	})
 })
+
+
+var rid = document.querySelector('.rid')
+
+rid.onclick = function(){
+	location.href = "/index.html"
+}
